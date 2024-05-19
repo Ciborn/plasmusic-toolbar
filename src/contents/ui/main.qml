@@ -63,7 +63,7 @@ PlasmoidItem {
 
                 ColumnLayout {
                     id: column
-                    spacing: 0
+                    spacing: -3
                     anchors.fill: parent
                     ScrollingText {
                         overflowBehaviour: plasmoid.configuration.textScrollingBehaviour
@@ -71,6 +71,7 @@ PlasmoidItem {
                         speed: plasmoid.configuration.textScrollingSpeed
                         maxWidth: plasmoid.configuration.maxSongWidthInPanel
                         text: player.title
+                        align: Qt.AlignLeft
                     }
                     ScrollingText {
                         overflowBehaviour: plasmoid.configuration.textScrollingBehaviour
@@ -78,6 +79,7 @@ PlasmoidItem {
                         speed: plasmoid.configuration.textScrollingSpeed
                         maxWidth: plasmoid.configuration.maxSongWidthInPanel
                         text: player.artists
+                        align: Qt.AlignLeft
                     }
                 }
             }

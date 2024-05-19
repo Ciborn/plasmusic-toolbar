@@ -15,6 +15,7 @@ Item {
     property int overflowBehaviour: ScrollingText.OverflowBehaviour.AlwaysScroll
 
     property string text: ""
+    property Qt.Alignment align: Qt.AlignHCenter
     readonly property string spacing: "     "
     readonly property string textAndSpacing: text + spacing
 
@@ -40,7 +41,7 @@ Item {
 
     Layout.preferredHeight: label.implicitHeight
     Layout.preferredWidth: width
-    Layout.alignment: Qt.AlignHCenter
+    Layout.alignment: align
 
     HoverHandler {
         id: mouse
